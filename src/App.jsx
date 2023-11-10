@@ -1,13 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./global.css";
 import { Home } from "./Pages/Home/Home.jsx";
-// import { About } from "./Pages/About";
+// import { Header } from "./Pages/Home/Header/Header.jsx";
+import { About } from "./Pages/About/About.jsx";
 // import { ApartmentRental } from "./Pages/ApartmentRental";
 // import { Error404 } from "./Pages/Error404";
 
 function App() {
   return (
     <>
-      <div>hello</div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
     </>
   );
 }
