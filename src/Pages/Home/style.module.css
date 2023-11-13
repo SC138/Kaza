@@ -1,0 +1,9 @@
+.container_rental{
+    background-color: #F6F6F6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 50px;
+    padding: 50px;
+    gap: 50px;
+    border-radius: 25px;
+}

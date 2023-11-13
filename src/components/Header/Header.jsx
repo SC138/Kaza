@@ -5,9 +5,7 @@ export function Header() {
   return (
     <header className={s.header}>
       <div className={s.container}>
-        <div>
-          <img className={s.logo} src={logo} alt="Logo Kaza" />
-        </div>
+        <img className={s.logo} src={logo} alt="Logo Kaza" />
         <nav>
           <ul className={s.link_nav}>
             <li>

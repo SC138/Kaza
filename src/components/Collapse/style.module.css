@@ -1,0 +1,55 @@
+.element{
+    width: 70%;
+    height: 50px;
+    background-color: #FF6060;
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.up{
+    width: 24px;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    color: white;
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease-out;
+}
+.down{
+    width: 24px;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform  0.5s ease-out;
+}
+
+.title{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 0 0 15px;
+}
+
+.content{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #F6F6F6;
+    padding: 10px 0 10px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.content_text{
+    width: 95%;
+    color: #FF6060;
+    padding: 10px 0  10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
