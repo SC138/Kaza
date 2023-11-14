@@ -1,0 +1,31 @@
+.containerError{
+    margin: 0;
+}
+
+.error404{
+    text-align: center;
+    margin-top: 0;
+}
+
+.errorTitle{
+    font-size: 288px;
+    font-weight: 700;
+    color: #FF6060;
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.errorPara{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    margin: 0;
+    margin-bottom: 120px;
+}
+
+.errorLink{
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+}

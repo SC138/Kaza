@@ -4,6 +4,7 @@ import banner from "../../assets/images/Image-source-1.png";
 import { PreviewRental } from "../../components/PreviewRental/PreviewRental";
 import data from "../../data/logements.json";
 import { Banner } from "../../components/Banner/Banner";
+import { Footer } from "../../components/Footer/Footer";
 
 export function Home() {
   const dataRental = data.filter((rental) => rental);
@@ -25,6 +26,7 @@ export function Home() {
           })}
         </div>
       </main>
+      <Footer />
     </>
   );
 }

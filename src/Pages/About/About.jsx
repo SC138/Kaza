@@ -2,6 +2,8 @@ import { Banner } from "../../components/Banner/Banner.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import banner from "../../assets/images/Image-source-2.png";
 import { Collapse } from "../../components/Collapse/Collapse.jsx";
+import { Footer } from "../../components/Footer/Footer.jsx";
+import s from "./style.module.css";
 
 export function About() {
   let aboutData = [
@@ -34,11 +36,14 @@ export function About() {
     <>
       <Header />
       <Banner image={banner} />
-      {aboutData.map((data) => (
-        <Collapse key={data.id} title={data.title}>
-          {data.content}
-        </Collapse>
-      ))}
+      <main className={s.containerCollaspe}>
+        {aboutData.map((data) => (
+          <Collapse key={data.id} title={data.title}>
+            {data.content}
+          </Collapse>
+        ))}
+      </main>
+      <Footer />
     </>
   );
 }
