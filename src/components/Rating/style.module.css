@@ -1,0 +1,14 @@
+.star {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #FF6060;
+    border: none;
+}
+
+.starEmpty {
+    position: relative;
+    font-size: 30px;
+    margin-right: 10px;
+    color: lightgrey;
+    border: none;
+  }
