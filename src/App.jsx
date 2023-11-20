@@ -16,7 +16,7 @@ function App() {
           {data.map((rental) => (
             <Route
               key={rental.id}
-              path="/location/:id"
+              path="/logement/:id"
               element={<ApartmentRental />}
             />
           ))}

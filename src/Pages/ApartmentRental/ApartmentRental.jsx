@@ -34,7 +34,7 @@ export function ApartmentRental() {
   };
 
   const styleCollapse = {
-    width: "92%",
+    width: "95%",
   };
 
   return (
@@ -64,7 +64,7 @@ export function ApartmentRental() {
             />
           </div>
           <div className={s.rating}>
-            <Rating rating={rental.rating} />
+            <Rating rating={Number(rental.rating)} />
           </div>
         </div>
       </div>

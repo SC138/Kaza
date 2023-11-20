@@ -6,6 +6,7 @@ import data from "../../data/logements.json";
 import { Banner } from "../../components/Banner/Banner";
 import { Footer } from "../../components/Footer/Footer";
 
+
 export function Home() {
   const dataRental = data.filter((rental) => rental);
   return (

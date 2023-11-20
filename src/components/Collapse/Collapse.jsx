@@ -28,6 +28,6 @@ export function Collapse({ title, children, style }) {
 
 Collapse.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.node,
   style: PropTypes.object,
 };
