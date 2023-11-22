@@ -6,7 +6,7 @@ import data from "../../data/logements.json";
 import { Banner } from "../../components/Banner/Banner";
 import { Footer } from "../../components/Footer/Footer";
 
-
+// Crée un composant Home qui rend le composant Header, le composant Banner et le composant PreviewRental.
 export function Home() {
   const dataRental = data.filter((rental) => rental);
   return (

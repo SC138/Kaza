@@ -2,7 +2,9 @@ import s from "./style.module.css";
 import logo from "../../assets/images/logored.png";
 import PropTypes from "prop-types";
 
+// Définit le composant Header.
 export function Header({ style}) {
+  // Rendu du composant Header.
   return (
     <header className={s.header}>
       <div className={s.container} style={style}>
@@ -25,7 +27,7 @@ export function Header({ style}) {
     </header>
   );
 }
-
+// Définit le type des props du composant Header.
 Header.propTypes = {
   style: PropTypes.object,
 };

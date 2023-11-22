@@ -8,19 +8,26 @@ import { Error404 } from "../Error404/Error404";
 import { Gallery } from "../../components/Gallery/Gallery";
 import { Rating } from "../../components/Rating/Rating";
 
+// Crée un composant ApartmentRental qui rend les composants Header, Gallery, Collapse, Footer, Error404.
 export function ApartmentRental() {
+  // Utilise useParams pour extraire le paramètre "id" de l'URL actuelle.
   const { id } = useParams();
+  // Utilise useNavigate pour naviguer vers une autre URL.
   const navigate = useNavigate();
 
+  // Utilise la méthode find() pour trouver le logement correspondant à l'ID.
   const rental = data.find((rental) => rental.id === id);
+  // Si le logement n'existe pas, navigue vers la page d'erreur 404.
   if (!rental) {
     navigate("/*");
     return <Error404 />;
   }
 
+  // Extrait les images et les équipements du logement.
   const pictures = rental.pictures;
   const equipments = rental.equipments;
 
+  // Crée une fonction viewEquipments qui rend une liste des équipements.
   const viewEquipments = () => {
     return (
       <ul key="equipments" className={s.ulEquipments}>
@@ -33,14 +40,17 @@ export function ApartmentRental() {
     );
   };
 
+  // Style pour les composants Collapse.
   const styleCollapse = {
     width: "90%",
   };
 
+  // Rendu du composant ApartmentRental.
   return (
     <>
       <Header />
       <Gallery images={pictures} />
+      {/* Affiche les informations du logement. */}
       <div className={s.container}>
         <div className={s.titleBlock}>
           <h1 className={s.title}>{rental.title}</h1>
@@ -54,6 +64,7 @@ export function ApartmentRental() {
           </div>
         </div>
 
+        {/* Affiche les informations de l'hôte. */}      
         <div className={s.hostBlock}>
           <div className={s.hostInfo}>
             <p className={s.name}>{rental.host.name}</p>
@@ -64,12 +75,14 @@ export function ApartmentRental() {
             />
           </div>
           <div className={s.rating}>
+            {/* Affiche la note de l'hôte. */}
             <Rating rating={Number(rental.rating)} />
           </div>
         </div>
       </div>
       <div className={s.containerCollapse}>
         <div className={s.collapse}>
+          {/* Utilise le composant Collapse pour afficher la description et l'équipement du logement. */}
           <Collapse style={styleCollapse} title="Description">
             {rental.description}
           </Collapse>

@@ -5,7 +5,9 @@ import { Collapse } from "../../components/Collapse/Collapse.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import s from "./style.module.css";
 
+// Définit le composant About.
 export function About() {
+  // Définit les données de la page About sous forme d'un tableau d'objets.
   let aboutData = [
     {
       id: 1,
@@ -32,17 +34,19 @@ export function About() {
         "La sécurité est la priorité de Kasa. C'est pourquoi nous assurons un suivi sans faille des annonces postées sur notre site. Et nous garantissons que vos données personnelles seront protégées.",
     },
   ];
+  // Style pour les composants Collapse.
   const styleCollapse = {
     width: "90%",
   }
 
-
+// Rendu du composant About.
   return (
     <>
       <Header />
       <Banner image={banner} />
       <main className={s.containerCollaspe}>
         {aboutData.map((data) => (
+          // Rend le composant Collapse pour chaque objet du tableau aboutData.
           <Collapse style={styleCollapse} key={data.id} title={data.title}>
             {data.content}
           </Collapse>

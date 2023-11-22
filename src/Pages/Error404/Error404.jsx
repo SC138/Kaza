@@ -1,8 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import s from "./style.module.css";
 
+// Crée un composant Error404 qui rend le composant Header et le composant Footer.
 export function Error404() {
   return (
     <>
