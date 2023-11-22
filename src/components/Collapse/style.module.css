@@ -41,6 +41,7 @@
 
 .content{
     width: 70%;
+    height: 20vh;
     margin: auto;
     margin-bottom: 30px;
     background-color: #F6F6F6;
@@ -54,4 +55,17 @@
     padding: 10px 0  10px 20px;
     font-size: 18px;
     font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+    .title{
+        padding: 15px 0 0 15px;
+        font-size: 18px;
+    }
+
+    .content_text{
+        width: 90%;
+        font-size: 14px;
+    }
+    
 }

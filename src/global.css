@@ -17,7 +17,9 @@ body {
 #root{
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
   min-height: 100vh;
+  margin: auto;
 }
 
 main{
@@ -28,5 +30,11 @@ footer{
   margin-top: auto;
 }
 
+@media screen and (max-width: 767px){
+  main{
+    margin: auto 0;
+  }
+  
+}
 
 

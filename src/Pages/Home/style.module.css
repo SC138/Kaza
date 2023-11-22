@@ -7,3 +7,22 @@
     gap: 50px;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 768px){
+    .container_rental{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: auto;
+        background-color: unset;
+        gap: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container_rental{
+        width: 90%;
+        padding: 20px 0;
+    }
+    
+}

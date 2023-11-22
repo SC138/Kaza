@@ -34,7 +34,7 @@ export function ApartmentRental() {
   };
 
   const styleCollapse = {
-    width: "95%",
+    width: "90%",
   };
 
   return (
@@ -70,10 +70,14 @@ export function ApartmentRental() {
       </div>
       <div className={s.containerCollapse}>
         <div className={s.collapse}>
-          <Collapse style={styleCollapse} title="Description">{rental.description}</Collapse>
+          <Collapse style={styleCollapse} title="Description">
+            {rental.description}
+          </Collapse>
         </div>
         <div className={s.collapse}>
-          <Collapse style={styleCollapse} title="Équipements">{viewEquipments()}</Collapse>
+          <Collapse style={styleCollapse} title="Équipements">
+            {viewEquipments()}
+          </Collapse>
         </div>
       </div>
 

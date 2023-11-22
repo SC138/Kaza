@@ -32,13 +32,18 @@ export function About() {
         "La sécurité est la priorité de Kasa. C'est pourquoi nous assurons un suivi sans faille des annonces postées sur notre site. Et nous garantissons que vos données personnelles seront protégées.",
     },
   ];
+  const styleCollapse = {
+    width: "90%",
+  }
+
+
   return (
     <>
       <Header />
       <Banner image={banner} />
       <main className={s.containerCollaspe}>
         {aboutData.map((data) => (
-          <Collapse key={data.id} title={data.title}>
+          <Collapse style={styleCollapse} key={data.id} title={data.title}>
             {data.content}
           </Collapse>
         ))}

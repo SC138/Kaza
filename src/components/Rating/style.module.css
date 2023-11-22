@@ -12,3 +12,15 @@
     color: lightgrey;
     border: none;
   }
+
+  @media screen and (max-width: 767px) {
+    .star {
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .starEmpty {
+        margin-right: 5px;
+        font-size: 15px;
+    }
+  }

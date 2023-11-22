@@ -1,5 +1,5 @@
 .gallery {
-    width: 95%;
+    width: 86%;
     height: 415px;
     position: relative;
     margin: auto;
@@ -46,4 +46,23 @@
     left: 50%;
     transform: translateX(-50%); 
     color: white;
+  }
+
+  @media screen and (max-width: 767px) {
+    .gallery {
+      width: 90%;
+      height: 250px;
+    }
+
+    .imgGallery{
+      border-radius: 10px;
+    }
+
+    .chevron{
+      font-size: 30px;
+    }
+    
+    .counter {
+      display: none;
+    }
   }

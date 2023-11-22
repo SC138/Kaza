@@ -11,7 +11,7 @@ export function Error404() {
         <div className={s.error404}>
           <h1 className={s.errorTitle}>404</h1>
           <p className={s.errorPara}>
-            Oups! La page que vous demandez n'existe pas.
+            <span className={s.textMobile}>Oups! La page que</span> vous demandez n'existe pas.
           </p>
           <a className={s.errorLink} href="/">
             Retourner sur la page d'accueil

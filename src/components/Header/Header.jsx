@@ -1,10 +1,11 @@
 import s from "./style.module.css";
 import logo from "../../assets/images/logored.png";
+import PropTypes from "prop-types";
 
-export function Header() {
+export function Header({ style}) {
   return (
     <header className={s.header}>
-      <div className={s.container}>
+      <div className={s.container} style={style}>
         <img className={s.logo} src={logo} alt="Logo Kaza" />
         <nav>
           <ul className={s.link_nav}>
@@ -24,3 +25,7 @@ export function Header() {
     </header>
   );
 }
+
+Header.propTypes = {
+  style: PropTypes.object,
+};
