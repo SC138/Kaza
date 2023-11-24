@@ -17,13 +17,14 @@ body {
 #root{
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-height: 100vh;
   margin: auto;
 }
 
 main{
   margin: auto 50px;
+
 }
 
 footer{

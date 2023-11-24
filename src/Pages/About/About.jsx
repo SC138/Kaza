@@ -43,8 +43,8 @@ export function About() {
   return (
     <>
       <Header />
-      <Banner image={banner} />
       <main className={s.containerCollaspe}>
+      <Banner image={banner} />
         {aboutData.map((data) => (
           // Rend le composant Collapse pour chaque objet du tableau aboutData.
           <Collapse style={styleCollapse} key={data.id} title={data.title}>

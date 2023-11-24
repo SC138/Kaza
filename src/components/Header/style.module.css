@@ -1,7 +1,12 @@
+.header, main{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
 .header{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -12,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 105px;
+    padding: 0 0px;
 }
 
 .link_nav{

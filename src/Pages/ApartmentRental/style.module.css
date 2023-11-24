@@ -1,11 +1,17 @@
+main{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
 .container {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FF6060;
     font-family: "'Montserrat', sans-serif";
-    padding-left: 15px;
+    /* padding-left: 15px; */
     margin: auto;
   }
 
@@ -76,10 +82,8 @@
   }
 
   .containerCollapse {
-    width: 91%;
     display: flex;
-    margin: 0 auto 50px auto ;
-    padding: 0 50px;
+    margin: 0 auto 30px -20px ;
 }
 
 .collapse {

@@ -49,6 +49,7 @@ export function ApartmentRental() {
   return (
     <>
       <Header />
+      <main>
       <Gallery images={pictures} />
       {/* Affiche les informations du logement. */}
       <div className={s.container}>
@@ -93,6 +94,9 @@ export function ApartmentRental() {
           </Collapse>
         </div>
       </div>
+
+      </main>
+      
 
       <Footer />
     </>
