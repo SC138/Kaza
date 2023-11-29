@@ -60,10 +60,29 @@
     }
 
     .title {
-        width: 69%;
+        width: 50%;
         font-size: 24px;
         text-align: start;
         left: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    .title{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .title{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .title{
+        width: 65%;
     }
     
 }

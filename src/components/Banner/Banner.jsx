@@ -6,7 +6,7 @@ export function Banner({ image, title = null }) {
     <>
       <div className={s.banner}>
         <span className={s.banner_opacity}></span>
-        <img className={s.main_banner} src={image} alt="Bannière Kaza" />
+        <img className={s.main_banner} src={image} alt="Bannière Kasa" />
         <h1 className={s.title}>{title}</h1>
       </div>
     </>
