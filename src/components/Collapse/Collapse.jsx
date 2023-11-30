@@ -26,14 +26,14 @@ export function Collapse({ title, children, style }) {
         {/* Affiche une icône de chevron vers le haut ou vers le bas en fonction de l'état actif. */}
         <ChevronUp
           className={isActive ? s.up : s.down}
-          // Ajoute un gestionnaire d'événements de clic sur les icônes de chevrons. 
+          // Ajoute un gestionnaire d'événements de clic sur les icônes de chevrons.
           onClick={handleChevronClick}
         />
       </section>
       {/* Affiche le contenu seulement si l'état est actif. */}
       {isActive ? (
         <div className={s.content} style={style}>
-          <p className={s.content_text}>{children}</p>
+          <div className={s.content_text}>{children}</div>
         </div>
       ) : (
         false
